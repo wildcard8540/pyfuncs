@@ -15,7 +15,6 @@ int main()
     string str;
     getline(cin, str);
 
-    string separator = ", ";
     vector<string> splited = split(str, ", ");
 
     for(string i : splited)

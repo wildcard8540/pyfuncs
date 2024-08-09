@@ -6,7 +6,7 @@
 ```cpp
 #include <iostream>
 #include <vector>
-#include "main.cpp"
+#include "pyfuncs.cpp"
 
 using namespace std;
 
@@ -24,3 +24,5 @@ int main()
     }
 }
 ```
+
+Обязательно импортируйте библиотеки iostream и vector перед импортом pyfuncs

@@ -44,24 +44,15 @@ vector<string> split(string str, string separator)
 
 int toInt(string str)  // Тоже самое что int() в python
 {
-	int result = 0, i = 0; 
+    int result = 0, i = 0; 
 	
-	bool sign = str[0] == '-';
-	if(sign)
-	{
-		i = 1;
-	}
+    for(i; i < str.length(); i++)
+    {
+	if(str[i] < 48) continue;
+	result += (str[i] - 48) * pow(10, str.length() - i - 1);
+    }
 	
-	for(i; i < str.length(); i++)
-	{
-		result += (str[i] - 48) * pow(10, str.length() - i - 1);
-	}
+    if(str[0] == 45) result = -(result);
 	
-	if(sign)
-	{
-		result = -(result);
-	}
-	
-	return result;
+    return result;
 }
-

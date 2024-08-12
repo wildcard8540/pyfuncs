@@ -1,5 +1,6 @@
 #include <vector>
 #include <string>
+#include <cmath>
 using namespace std;
 
 vector<string> split(string str, string separator)
@@ -45,7 +46,7 @@ int toInt(string str)  // Тоже самое что int() в python
 {
 	int result = 0, i = 0; 
 	
-	char sign = str[0] == '-';
+	bool sign = str[0] == '-';
 	if(sign)
 	{
 		i = 1;

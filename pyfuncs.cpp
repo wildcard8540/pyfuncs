@@ -48,8 +48,8 @@ int toInt(string str)  // Тоже самое что int() в python
 	
     for(i; i < str.length(); i++)
     {
-	if(str[i] < 48) continue;
-	result += (str[i] - 48) * pow(10, str.length() - i - 1);
+        if(str[i] < 48) continue;
+        result += (str[i] - 48) * pow(10, str.length() - i - 1);
     }
 	
     if(str[0] == 45) result = -(result);

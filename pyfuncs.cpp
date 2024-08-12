@@ -24,7 +24,9 @@ vector<string> split(string str, string separator)
 
             if(temp_str == separator)
             {
-                strv.push_back("");
+                if(!strv[strv.size() - 1].empty()){
+                    strv.push_back("");
+                }
 
                 to = i;
                 from = i + separator.length();

@@ -44,9 +44,9 @@ vector<string> split(string str, string separator)
 
 int toInt(string str)  // Тоже самое что int() в python
 {
-    int result = 0, i = 0; 
+    int result = 0; 
 	
-    for(i; i < str.length(); i++)
+    for(int i = 0; i < str.length(); i++)
     {
         if(str[i] < 48) continue;
         result += (str[i] - 48) * pow(10, str.length() - i - 1);
